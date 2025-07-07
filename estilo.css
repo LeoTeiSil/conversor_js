@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #1c1c1c;
+  color: #ffffff;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.conversor-moeda {
+  background-color: #2e8b57;
+  padding: 3em;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 90%;
+}
+
+.caixa-entrada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+label {
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+}
+
+#valor {
+  width: 100%;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 1.5em;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+#valor:focus {
+  border-color: #00ffcc;
+  outline: none;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.moeda {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.caixa {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.seletor-moeda {
+  width: 100%;
+  padding: 15px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 2px solid #000;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.botao-converter {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.botao-converter:hover {
+  background-color: #4d4d4d;
+  color: #000000;
+}
+
+.resultado {
+  font-size: 2em;
+  margin-top: 10px;
+}

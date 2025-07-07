@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Moedas</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="container">
+    <div class="conversor-moeda">
+      <h1>Conversor<br>de Moedas</h1>
+      
+      <div class="caixa-entrada">
+        <label for="valor">Digite o valor</label>
+        <input type="text" id="valor" placeholder="100" required />
+      </div>
+      
+      <div class="moeda">
+        <div class="caixa">
+          <select class="seletor-moeda" name="moeda-origem" id="moedaOrigem">
+            <option value="USD">Dólar Americano</option>
+          </select>
+        </div>
+        
+        <div>
+          <span>PARA</span>
+        </div>
+        
+        <div class="caixa">
+          <select class="seletor-moeda" name="moeda-destino" id="moedaDestino">
+            <option value="USD">Dólar Americano</option>
+          </select>
+        </div>
+        
+        <button class="botao-converter">Converter</button>
+        <p class="resultado"></p>
+        <h3>Taxa de câmbio</h3>
+        <p class="taxa-cambio"></p>
+        <p class="erro"></p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
